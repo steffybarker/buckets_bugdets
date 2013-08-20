@@ -18,7 +18,7 @@ class BucketsControllerTest < ActionController::TestCase
 
   test "should create bucket" do
     assert_difference('Bucket.count') do
-      post :create, bucket: { amount_left: @bucket.amount_left, amount_total: @bucket.amount_total, name: @bucket.name }
+      post :create, bucket: { amount_total: @bucket.amount_total, name: @bucket.name, renew_date: @bucket.renew_date }
     end
 
     assert_redirected_to bucket_path(assigns(:bucket))
@@ -35,7 +35,7 @@ class BucketsControllerTest < ActionController::TestCase
   end
 
   test "should update bucket" do
-    patch :update, id: @bucket, bucket: { amount_left: @bucket.amount_left, amount_total: @bucket.amount_total, name: @bucket.name }
+    patch :update, id: @bucket, bucket: { amount_total: @bucket.amount_total, name: @bucket.name, renew_date: @bucket.renew_date }
     assert_redirected_to bucket_path(assigns(:bucket))
   end
 

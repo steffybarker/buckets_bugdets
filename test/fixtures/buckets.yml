@@ -3,9 +3,9 @@
 one:
   name: MyString
   amount_total: 1
-  amount_left: 1.5
+  renew_date: 2013-08-20
 
 two:
   name: MyString
   amount_total: 1
-  amount_left: 1.5
+  renew_date: 2013-08-20

@@ -5,7 +5,7 @@
     <tr>
       <th>Name</th>
       <th>Amount total</th>
-      <th>Amount left</th>
+      <th>Renew date</th>
       <th></th>
       <th></th>
       <th></th>
@@ -17,7 +17,7 @@
       <tr>
         <td><%= bucket.name %></td>
         <td><%= bucket.amount_total %></td>
-        <td><%= bucket.amount_left %></td>
+        <td><%= bucket.renew_date %></td>
         <td><%= link_to 'Show', bucket %></td>
         <td><%= link_to 'Edit', edit_bucket_path(bucket) %></td>
         <td><%= link_to 'Destroy', bucket, method: :delete, data: { confirm: 'Are you sure?' } %></td>
